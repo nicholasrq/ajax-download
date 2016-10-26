@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload/download</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Upload</legend>
+
+    <form id="upload" action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <button type="submit">Upload</button>
+      <br>
+      <progress hidden value="0" min="0" max="100"></progress>
+    </form>
+  </fieldset>
+
+  <fieldset>
+    <legend>Download</legend>
+    <ul id="files-list"></ul>
+  </fieldset>
+
+  <script src="/client.js"></script>
+</body>
+</html>
