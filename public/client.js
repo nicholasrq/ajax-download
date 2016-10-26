@@ -81,6 +81,8 @@ list.addEventListener('click', function(e){
           progress  = e.target.parentNode.querySelector('progress');
 
     progress.hidden = false
+
+    xhr.responseType = 'blob'
   
     xhr.open("GET", href)
 
