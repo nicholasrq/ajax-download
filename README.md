@@ -1,1 +1,8 @@
-File upload/download example
+# File upload/download example
+
+# Run
+
+```
+$ npm install
+$ npm start
+```
